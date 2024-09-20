@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Тестовое задание №2</title>
+	<!-- Допустим, необходимо сверстать шапку сайта. В ней будет логотип, при клике на который будет переход на главную страницу сайта, поиск, состоящий из поля ввода запроса и кнопки отправки данных, контактный телефон, кнопка запроса обратного звонка и навигационное меню.
+	Задача: указать теги, которые вы будете использовать, а также классы, которые вы им назначите.-->
+</head>
+
+<body>
+	<header class="page-header">
+		<div class="menu-container"> <!-- Общий блок для контейнера и css(less\sass) блока -->
+			<a href="#" class="logo-link"> <!-- Блок логотипа. Возможен БЭМ микс, если будет нужно-->
+				<picture class="logo-link__picture">
+					<!-- Я мог этого не делать, но так лого будет адаптивным в дальнейшем-->
+					<!-- Для мобильных устройств (ширина до 767px) -->
+					<source srcset="" media="(max-width: 767px)" width="34" height="38">
+					<!-- Для планшетов (ширина от 768px до 1439px) -->
+					<source srcset="" media="(min-width: 768px) and (max-width: 1439px)"
+						width="61" height="51">
+					<!-- Для десктопов и больших экранов (ширина 1440px и выше) -->
+					<source srcset="" media="(min-width: 1440px)" width="70" height="59">
+					<!-- Изображение для устройств, которые не поддерживают элемент <source> (например, старые браузеры) -->
+					<img class="logo-link__logo" src="" alt="Логотип сайта"
+						width="60" height="50">
+				</picture>
+			</a>
+			<nav class="main-nav"> <!-- Блок главной навигации. Возможен микс БЭМ при необходимости -->
+				<a class="main-nav__nav-link" href="index.html">Главная</a>
+				<a class="main-nav__nav-link" href="catalog.html">Каталог продукции</a>
+				<a class="main-nav__nav-link" href="form.html">Программы</a>
+			</nav>
+			<form class="form-search" action="" method="get">
+				<input class="form-search__input" name="search" id="search-input" placeholder="Введите запрос"
+					type="search">
+				<button class="form-search__btn" type="submit">Поиск</button>
+			</form>
+			<div class="phone-contact"> <!-- Блок контактов. Возможен микс БЭМ при необходимости -->
+				<a class="header__phone" href="tel:+71239999999">Телефон: +7 (123) 999-99-99</a>
+				<button class="header__callback-btn">Запросить обратный звонок</button>
+			</div>
+		</div>
+	</header>
+</body>
+
+</html>
