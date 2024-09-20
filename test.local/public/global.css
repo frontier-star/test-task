@@ -55,7 +55,7 @@ input {
 .form-search__btn::after {
   display: block;
   content: "";
-  background-image: url(./images/icons8-поиск-32.png);
+  background-image: url(./icons8-поиск-32.png);
   background-position: center;
   background-repeat: no-repeat;
   width: 32px;
